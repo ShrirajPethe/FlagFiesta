@@ -211,7 +211,8 @@ function fetchRandomFlag() {
 }
 
 function checkGuess() {
-    const userGuess = document.getElementById('userGuess').value;
+    // const userGuess = document.getElementById('userGuess').value;
+    let userGuess = document.getElementById('userGuess').value.trim(); // Trim extra spaces By the AUTOCORRECT.
     if (userGuess.toUpperCase() === currentFlag.toUpperCase()) {
         score++;
         timeLeft+=10;
@@ -256,8 +257,8 @@ function showNotification2() {
 
 // game over -> Either timer reaching 0 OR running out of chances
 function endGame() {
-    clearInterval(timerInterval); 
-    document.getElementById('timer').style.display = 'none'; 
+    clearInterval(timerInterval);
+    document.getElementById('timer').style.display = 'none';
     alert("Game over! Your score is: " + score);
 }
 
@@ -275,11 +276,6 @@ function startTimer() {
     }, 1000);
 }
 
-function endGame() {
-    clearInterval(timerInterval); // Stop the timer
-    document.getElementById('timer').style.display = 'none'; // Hide the timer
-    alert("Game over! Your score is: " + score);
-}
 
 function resetGame() {
     score = 0;
@@ -322,6 +318,14 @@ document.addEventListener("DOMContentLoaded", function() {
         }, 5000);
 
     }, 500);
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+    // Add attributes to disable autocapitalize, autocomplete, and spellcheck for the input
+    document.getElementById('userGuess').setAttribute("autocomplete", "off");
+    document.getElementById('userGuess').setAttribute("autocorrect", "off");
+    document.getElementById('userGuess').setAttribute("autocapitalize", "none");
+    document.getElementById('userGuess').setAttribute("spellcheck", "false");
 });
 
 
