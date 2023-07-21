@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlagFiesta</title>
+    <link rel="stylesheet" href="styles.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100&family=Open+Sans:wght@400;800&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap" rel="stylesheet"> -->
+
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100&display=swap" rel="stylesheet"> -->
+</head>
+<body>
+    <div class="container">
+        <div id="title">
+        <h1 id="title">Guess the Flag!</h1>
+        <div class="notification" id="notification" style="opacity: 0%;">Correct!🎉</div>
+        <div class="notification" id="notifiNot" style="opacity: 0%;">Incorrect!❌</div>
+        </div>
+
+        <div class="flag-container">
+            <img src="" alt="Flag" id="flag">
+            <!-- <div class="notification" id="notification">Correct!</div> -->
+        </div>
+        <!-- <input type="text" id="userGuess" style="    text-align: center; opacity: 25%;" placeholder="Enter country name"> -->
+        <input type="text" id="userGuess" style="    text-align: center;" placeholder="Enter country name">
+
+        <div style="margin-top: 10px;">
+            <button id="submitGuess" onclick="checkGuess()" style="font-weight: bold; width: 34%; margin-top: 10px;">Submit</button>
+        </div>
+
+        <div style="margin-top: 10px;">
+            <button id="skipFlag" onclick="skipFlag()" style="opacity: 0.6; width: 16%;">Skip</button>
+            <button id="resetGame" onclick="resetGame()" style="opacity: 0.6; width: 16%; margin-left: 10px;">Reset</button>
+        </div>
+        <p id="timer">Time left: <span>60</span> seconds</p>
+        <p id="score">Score: 0</p>
+        <p id="chances">Chances left: 3</p>
+        <!-- <p id="Author">*^____^* 👌      Author Shriraj Pethe</p> 
+        <p id="Author">(～￣▽￣)～ 👌      Author Shriraj Pethe</p> -->
+    </div>
+    <script src="script.js"></script>
+    <div class="container2" style="text-align: center;">
+        <p id="Author" style=" color: #666; font-size: 8px;">*^____^* 👌      Author Shriraj Pethe</p> 
+        <p id="Author" style=" color: #666; font-size: 8px;">(～￣▽￣)～ 👌      Author Shriraj Pethe</p>
+    </div>
+</body>
+</html>
+<!-- *^____^* 👌      Author Shriraj Pethe  
+(～￣▽￣)～ 👌      Author Shriraj Pethe -->
