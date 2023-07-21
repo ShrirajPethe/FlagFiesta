@@ -34,10 +34,16 @@
             <button id="submitGuess" onclick="checkGuess()" style="font-weight: bold; width: 34%; margin-top: 10px;">Submit</button>
         </div>
 
-        <div style="margin-top: 10px;">
+        <!-- <div style="margin-top: 10px;">
             <button id="skipFlag" onclick="skipFlag()" style="opacity: 0.6; width: 16%;">Skip</button>
             <button id="resetGame" onclick="resetGame()" style="opacity: 0.6; width: 16%; margin-left: 10px;">Reset</button>
+        </div> -->
+
+        <div class="button-container">
+            <button id="skipFlag" onclick="skipFlag()" class="button-text">Skip</button>
+            <button id="resetGame" onclick="resetGame()" class="button-text">Reset</button>
         </div>
+        
         <p id="timer">Time left: <span>60</span> seconds</p>
         <p id="score">Score: 0</p>
         <p id="chances">Chances left: 3</p>
