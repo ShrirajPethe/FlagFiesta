@@ -142,11 +142,39 @@ button {
     background-color: #007BFF;
     color: #fff;
     cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
 }
 
-button:hover {
-    background-color: #0056b3;
+.transparent-btn
+{
+    background-color: transparent;
+    color: #007BFF;
+    border: 0.25px solid  #c2c2c2;
+    font-family: 'Open Sans', sans-serif;
 }
+
+.transparent-btn:hover {
+    background-color: #bcc7d3;
+}
+/* 
+background-color: transparent;
+border: 0.5px solid #007BFF;
+display: flex;
+justify-content: center;
+align-items: center;
+/* width: 100%; */
+ /* This ensures that the button occupies the full width */
+/* overflow: hidden; */
+/* This prevents text overflow */
+
+
+button:hover {
+    background-color: #0099ff;
+}
+
+/* :hover */
+/* background-color: rgba(0, 0, 0, 0.1);  */
+/* This gives a slight shade when the button is hovered */
 
 input {
     width: 65%;  
@@ -168,34 +196,6 @@ p {
     background-color: #fff; 
     border: 0.5px solid #ccc; 
     outline: none;
-}
-
-.button-text {
-    background-color: transparent;
-    color: #007BFF;
-    text-decoration: underline;
-    padding: 0;
-    font-size: 16px;
-    font-weight: bold;
-    width: auto;
-    margin: 0;
-    display: inline;
-}
-
-.button-text:hover {
-    color: #0056b3;
-}
-
-.button-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 10px;
-    flex-wrap: wrap;
-}
-
-input, button {
-    max-width: 100%;
 }
 
 
