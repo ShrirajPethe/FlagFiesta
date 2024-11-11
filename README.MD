@@ -1,6 +1,6 @@
 # FlagFiesta
 
-(Play FlagFiesta Now!)[https://shrirajpethe.github.io/FlagFiesta/]
+[Play FlagFiesta Now!](https://shrirajpethe.github.io/FlagFiesta/)
 
 ![Game screenshot](screenshot.jpeg) 
 
